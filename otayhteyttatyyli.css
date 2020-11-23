@@ -1,0 +1,71 @@
+h1{
+  text-align: center;
+}
+
+.navigaatio{
+  position: fixed;
+  top: 100px;
+  left: 0px;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 5px;
+  border: none;
+  text-decoration: none;
+}
+
+.navigaatio:hover{
+  background-color: #FF0000;
+}
+
+.navigaatio a{
+  display:block;
+}
+
+.navigaatio:active{
+  background-color: #FFFFFF;
+}
+
+body{
+  background-color: #6EB1FF;
+}
+
+.divi4{
+  float: left;
+  width: 22%;
+  border: 2px solid #000000;
+  margin-top: 25px;
+  height: 80px;
+  box-sizing: auto;
+  background-color: #CBE3FF;
+}
+
+.keskidiv{
+  width: 70%;
+  margin: auto;
+  background-color: #9DCAFE;
+  color: #000000;
+  border-style: double;
+  padding: 10px;
+}
+
+.divii{
+  width: auto;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.yhteydenotto label{
+  display: block;
+}
+.yhteydenotto input[type="text"], yhteydenotto input[type="email"],.yhteydenotto textarea, .yhteydenotto input[type="number"], .yhteydenotto input[type="email"], .yhteydenotto input[type="date"], .yhteydenotto select{
+  padding: 10px;
+  width: 96%;
+}
+
+
+
+
+
+
+
+

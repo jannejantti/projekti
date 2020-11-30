@@ -91,8 +91,8 @@ console.log(perhe3Filter);
 //alaikaiset loppuu
 
 //funktionkutsu
-function kaikkiiat(ekaNumero, tokaNumero, kolmasNumero, neljäsNumero){
-  return ekaNumero+ tokaNumero+ kolmasNumero + neljäsNumero;
+function kaikkiiat(ekaNumero, tokaNumero, kolmasNumero, neljasNumero){
+  return ekaNumero+ tokaNumero+ kolmasNumero + neljasNumero;
 }
 console.log (kaikkiiat(42, 40, 21, 18));
 //funktionkutsu loppuu

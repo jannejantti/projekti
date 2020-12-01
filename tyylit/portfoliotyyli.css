@@ -93,7 +93,7 @@ body{
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-
-
-
-
+.linkit{
+  color: #000;
+  text-align: center;
+}

@@ -193,4 +193,3 @@ getJSON('https://api.apify.com/v2/key-value-stores/jEFt5tgCTMfjJpLD3/records/LAT
     console.log(`${data.lastUpdatedAtApify}`);
   }
 });
-

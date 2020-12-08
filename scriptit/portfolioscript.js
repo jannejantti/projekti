@@ -207,7 +207,7 @@ function sendJSON(){
     }
   };
   var data = JSON.stringify({
-    "EmailMsg" : "Tähän tulee postin sisältö", //kirjoittaa sähköpostin sisällön
+    "EmailMsg" : "Sähköpostin lähetys toimi!", //kirjoittaa sähköpostin sisällön
     "EmailAddress" : "janne.jantti@edu.salpaus.fi", //viestin kirjoittajan sähköpostin
     "EmailTo" : "janttijannu1@gmail.com", //oma sähköposti
     "EmailName" : "Teppo Tyyppi" //nimi-kentän sisältö
@@ -216,14 +216,7 @@ function sendJSON(){
 }
 
 
-document.querySelector('.teema').addEventListener('click', e => {
-e.preventDefault();
-const chk = document.querySelector('input[name="gender"]:checked').value;
 
-if (chk=='vaalea'){
-  console.log("vaalea");
-}
-});
 
 
 

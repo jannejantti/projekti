@@ -33,9 +33,9 @@
   box-sizing: border-box;
 }
 
-/*body{
+body{
   background-color: #6EB1FF;
-}*/
+}
 
 .sidebar {
   height: auto;
@@ -44,7 +44,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: blue;
+  background-color: #000;
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;

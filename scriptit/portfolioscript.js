@@ -193,24 +193,24 @@ emailnappi.addEventListener('click', e => {
   sendJSON();
 });
 
-function sendJSON(){
+function sendJSON() {
   let xhr = new XMLHttpRequest();
-  let url =  "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
+  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
 
   xhr.open("POST", url, true);
 
   xhr.setRequestHeader("Content-Type", "application/json");
 
-  xhr.onreadystatechange = function(){
-    if(xhr.readyState === 4 && xhr.status === 200){
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4 && xhr.status === 200) {
       console.log('valmis, yhteys toimii');
     }
   };
   var data = JSON.stringify({
-    "EmailMsg" : "Sähköpostin lähetys toimi!", //kirjoittaa sähköpostin sisällön
-    "EmailAddress" : "janne.jantti@edu.salpaus.fi", //viestin kirjoittajan sähköpostin
-    "EmailTo" : "janttijannu1@gmail.com", //oma sähköposti
-    "EmailName" : "Teppo Tyyppi" //nimi-kentän sisältö
+    "EmailMsg": "Sähköpostin lähetys toimi!", //kirjoittaa sähköpostin sisällön
+    "EmailAddress": "janne.jantti@edu.salpaus.fi", //viestin kirjoittajan sähköpostin
+    "EmailTo": "janttijannu1@gmail.com", //oma sähköposti
+    "EmailName": "Teppo Tyyppi" //nimi-kentän sisältö
   });
   xhr.send(data);
 }

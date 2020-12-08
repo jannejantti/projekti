@@ -1,13 +1,13 @@
-var getJSON = function(url, callback) {
+var getJSON = function (url, callback) {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
-  xhr.responseType= 'json';
+  xhr.responseType = 'json';
 
-  xhr.onload = function(){
+  xhr.onload = function () {
 
     var status = xhr.status;
 
-    if(status == 200) {
+    if (status == 200) {
       callback(null, xhr.response);
     } else {
       callback(status);
@@ -15,7 +15,7 @@ var getJSON = function(url, callback) {
   };
   xhr.send();
 };
-getJSON('https://api.apify.com/v2/key-value-stores/jEFt5tgCTMfjJpLD3/records/LATEST?disableRedirect=true', function(err, data) {
+getJSON('https://api.apify.com/v2/key-value-stores/jEFt5tgCTMfjJpLD3/records/LATEST?disableRedirect=true', function (err, data) {
 
   if (err != null) {
     console.error(err);
@@ -25,6 +25,6 @@ getJSON('https://api.apify.com/v2/key-value-stores/jEFt5tgCTMfjJpLD3/records/LAT
     console.log(`${data.deaths}`);
     console.log(`${data.country}`);
     console.log(`${data.lastUpdatedAtApify}`);*/
-    document.querySelector(".korona").innerHTML=`Tartuntojen määrä: ${data.infected} <br> Testattujen määrä: ${data.tested} <br> Kuolemien määrä: ${data.deaths}`
+    document.querySelector(".korona").innerHTML = `Tartuntojen määrä: ${data.infected} <br> Testattujen määrä: ${data.tested} <br> Kuolemien määrä: ${data.deaths}`
   }
 });

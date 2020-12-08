@@ -216,6 +216,14 @@ function sendJSON(){
 }
 
 
+document.querySelector('.teema').addEventListener('click', e => {
+e.preventDefault();
+const chk = document.querySelector('input[name="gender"]:checked').value;
+
+if (chk=='vaalea'){
+  console.log("vaalea");
+}
+});
 
 
 

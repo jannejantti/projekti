@@ -6,7 +6,4 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-document.querySelector('.vaihdateema').addEventListener('click', e => {
-e.preventDefault();
-const chk = document.querySelector('input[name="gender"]:checked').value;
-});
+

@@ -215,9 +215,3 @@ function sendJSON() {
   xhr.send(data);
 }
 
-
-
-
-
-
-

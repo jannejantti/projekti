@@ -197,9 +197,9 @@ function sendJSON() {
   const email = document.querySelector('#sahkoposti').value;
 
   var data = JSON.stringify({
-    "EmailMsg": "Sähköpostin lähetys toimi!", 
+    "EmailMsg": email, 
     "EmailTo": "janne.jantti", 
-    "EmailName": "Teppo Tyyppi" 
+    "EmailName": nimi 
   });
   xhr.send(data);
 }

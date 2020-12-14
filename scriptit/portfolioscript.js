@@ -223,13 +223,13 @@ document.querySelector('#teemanappi').addEventListener('click', e =>{
   const chk = document.querySelector('input[name="gender"]:checked').value;
 
 if (chk=='Vaalea'){
-    console.log("vaalea");
-    document.body.style.background="white";
-    document.body.style.color="black";
+  console.log("vaalea");
+  document.body.style.background="white";
+  document.body.style.color="black";
 }
 else if (chk=='Tumma'){
   console.log("tumma")
-    document.body.style.background="black";
-    document.body.style.color="white";
+  document.body.style.background="black";
+  document.body.style.color="white";
 }
 });

@@ -206,6 +206,11 @@ function sendJSON() {
       console.log('valmis, yhteys toimii');
     }
   };
+
+  const nimi = document.querySelector('#nimi').value;
+  const email = document.querySelector('#email').value;
+  const viesti = document.querySelector('#viesti').value;
+
   var data = JSON.stringify({
     "EmailMsg": "Sähköpostin lähetys toimi!", //kirjoittaa sähköpostin sisällön
     "EmailTo": "janne.jantti", //oma sähköposti
@@ -214,3 +219,18 @@ function sendJSON() {
   xhr.send(data);
 }
 
+document.querySelector('#teemanappi').addEventListener('click', e =>{
+  e.preventDefault();
+  const chk = document.querySelector('input[name="gender"]:checked').value;
+
+if (chk=='Vaalea'){
+    console.log("vaalea");
+    document.body.style.background="white";
+    document.body.style.color="black";
+}
+else if (chk=='Tumma'){
+  console.log("tumma")
+    document.body.style.background="black";
+    document.body.style.color="white";
+}
+});

@@ -4,9 +4,6 @@
 <head>
 	<title>Jannen Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="tyylit/portfoliotyyli.css">
-	<script src="scriptit/portfolioscript.js">
-
-	</script>
 </head>
 
 <body>
@@ -61,14 +58,19 @@
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         
         <div class="teema">
-          <a href="testi1.html">Vaalea</a>
-          <a href="testi2.html">Tumma</a>
-          <a href="testi3.html">Sateenkaari</a>
+          <input type="radio" id="vaalea" name="gender" value="Vaalea">   
+          <label for="vaalea">Vaalea</label><br>
+          <br>
+          <input type="radio" id="tumma" name="gender" value="Tumma">
+          <label for="tumma">Tumma</label><br>
+          <input type="button" id="teemanappi" value="vaihda teema">
         </div>   
 
       </div>
       <div id="main">
       <button class="openbtn" onclick="openNav()">&#9776; Asetukset</button>
       </div>
+      <script src="scriptit/portfolioscript.js"></script>
+
   </body> 
 </html>

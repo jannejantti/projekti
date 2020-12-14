@@ -19,7 +19,7 @@ if (chk=='Vaalea'){
 else if (chk=='Tumma'){
   console.log("tumma")
   document.body.style.background="black";
-  document.body.style.color="white";
+  document.body.style.color="darkblue";
 }
 else if (chk=='Sateenkaari'){
   console.log("sateenkaari")

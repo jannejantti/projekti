@@ -208,8 +208,7 @@ function sendJSON() {
   };
 
   const nimi = document.querySelector('#nimi').value;
-  const email = document.querySelector('#email').value;
-  const viesti = document.querySelector('#viesti').value;
+  const email = document.querySelector('#sahkoposti').value;
 
   var data = JSON.stringify({
     "EmailMsg": "Sähköpostin lähetys toimi!", //kirjoittaa sähköpostin sisällön

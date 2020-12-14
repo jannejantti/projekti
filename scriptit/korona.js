@@ -37,3 +37,4 @@ getJSON('https://api.apify.com/v2/datasets/BDEAOLx0DzEW91s5L/items?format=json&c
   taulukko = taulukko + `</table>`
   document.body.innerHTML = taulukko;
 });
+  document.body.style.background="lightblue";
